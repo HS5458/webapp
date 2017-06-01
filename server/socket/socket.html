@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  Loading...
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+  io.connect().on('message',function (count) {
+      document.getElementsByTagName('body')[0].innerHTML = count;
+  })
+</script>
+</html>
