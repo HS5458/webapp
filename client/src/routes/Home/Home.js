@@ -1,6 +1,5 @@
-/**
- * Created by wubo on 2017/6/1.
- */
+"use strict";
+
 import React, {Component} from 'react';
 
 export default class Home extends Component {

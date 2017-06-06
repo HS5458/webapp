@@ -1,13 +1,13 @@
-/**
- * Created by wubo on 2017/6/1.
- */
+"use strict";
+
 import React from 'react';
 import ReactDom from 'react-dom';
 import {Router, hashHistory} from 'react-router';
 import {Route, IndexRoute} from 'react-router';
-import Login from './views/Login';
+import Login from './routes/Login/Login';
 import Container from './component/public/Container';
-import Home from './views/Home';
+import Home from './routes/Home/Home';
+import './app.less';
 
 function handleRouterUpdate() {
     console.log("router update: ", this.state.location.pathname);

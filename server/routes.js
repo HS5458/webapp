@@ -10,7 +10,7 @@ module.exports = function (app) {
     // app.use("/auth", require('./auth'));    // 登录认证
 
     app.use("/", function (req, res) {
-        console.log("第一个请求");
+        // console.log("第一个请求");
         var tmplFilePath;
         if (process.env.NODE_ENV === "production") {
             tmplFilePath = "../client/src/index.html";
